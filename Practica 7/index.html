@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animaciones</title>
+
+    <!-- AOS Liibrary-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <style>
         body {
             animation: colores 2s infinite;
@@ -30,10 +34,10 @@
             position: fixed;
             top: 200px;
             text-align: center; 
-            animation: form 5s infinite;
+            animation: MueveCuadro 5s infinite;
         }
 
-        @keyframes form {
+        @keyframes MueveCuadro {
             0%, 100% {
                 top: 400px;
             }
@@ -49,27 +53,93 @@
 
         .cuadroBlanco2 {
             left: 300px;
+            background-color: black;
+            animation: MueveCuadroNegro 3s infinite;
+        }
+
+        @keyframes MueveCuadroNegro {
+            0% {
+                left: 0px;
+            }
+
+            50% {
+                left: 1300px;
+            }
+
+            100% {
+                left: 0px;
+            }
         }
 
         .cuadroBlanco3 {
             left: 550px;
+            background-color: brown;
         }
 
         .cuadroBlanco4 {
             left: 800px;
+            background-color: blue;
         }
 
         .cuadroBlanco5 {
             left: 1050px;
+            background-color: blueviolet;
         }
 
         .cuadroBlanco6 {
             left: 1300px;
+            background-color: chocolate;
+            animation: Multicolor 3s infinite;
+        }
+
+        @keyframes Multicolor {
+            0% {
+                top: 50px;
+                left: 600px;
+                background: red;
+            }
+
+            25% {
+                top: 100px;
+                left: 600px;
+                width: 600px;
+                border: 10px solid black;
+                background: yellow;
+            }
+
+            50% {
+                left: 1300px;
+                background: purple;
+            }
+
+            100% {
+                top: 100px;
+                left: 500px;
+                background: white;
+            }
         }
 
         .cuadroBlanco7 {
             left: 1550px;
+            background-color: chartreuse;
+            border-radius: 50%;
+            animation: crece 3s infinite;
         }
+
+        @keyframes crece {
+            0% {
+                width: 100px;
+                height: 100px;
+            }
+
+            100% {
+                width: 1000px;
+                height: 1000px;
+            }
+            
+        }
+
+
 
 
         
@@ -83,5 +153,15 @@
     <div class="cuadroBlanco5"></div>
     <div class="cuadroBlanco6"></div>
     <div class="cuadroBlanco7"></div>
+
+
+    <h1 data-aos="fade-up"
+    data-aos-anchor-placement="top-bottom">Hola este es un texto animado</h1>
+    <!-- JS AOS Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
