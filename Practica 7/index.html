@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animaciones</title>
+    <style>
+        body {
+            animation: colores 2s infinite;
+
+        }
+
+        @keyframes colores {
+            0% {background: red }
+            25% {background: yellow}
+            50% {background: green}
+            100% {background: blue;}
+        }
+
+        .cuadroBlanco1,
+        .cuadroBlanco2,
+        .cuadroBlanco3,
+        .cuadroBlanco4,
+        .cuadroBlanco5,
+        .cuadroBlanco6,
+        .cuadroBlanco7 {
+            background-color: aliceblue;
+            height: 200px;
+            width: 200px;
+            position: fixed;
+            top: 200px;
+            text-align: center; 
+            animation: form 5s infinite;
+        }
+
+        @keyframes form {
+            0%, 100% {
+                top: 400px;
+            }
+
+            50% {
+                top: 100px;
+            }
+        }
+
+        .cuadroBlanco1 {
+            left: 50px;
+        }
+
+        .cuadroBlanco2 {
+            left: 300px;
+        }
+
+        .cuadroBlanco3 {
+            left: 550px;
+        }
+
+        .cuadroBlanco4 {
+            left: 800px;
+        }
+
+        .cuadroBlanco5 {
+            left: 1050px;
+        }
+
+        .cuadroBlanco6 {
+            left: 1300px;
+        }
+
+        .cuadroBlanco7 {
+            left: 1550px;
+        }
+
+
+        
+    </style>
+</head>
+<body>
+    <div class="cuadroBlanco1"></div>
+    <div class="cuadroBlanco2"></div>
+    <div class="cuadroBlanco3"></div>
+    <div class="cuadroBlanco4"></div>
+    <div class="cuadroBlanco5"></div>
+    <div class="cuadroBlanco6"></div>
+    <div class="cuadroBlanco7"></div>
+</body>
+</html>
