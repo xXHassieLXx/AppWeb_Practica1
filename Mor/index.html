@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+
+        <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+        <!-- Fancybox -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+
+    <style>
+
+        .Previous{ 
+          background-color: black;
+          height: 60px;
+          width: 40px;
+        }
+
+        .Next{ 
+          background-color: black;
+          height: 60px;
+          width: 40px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1>Para mi Principessa</h1>
+            </div>
+        </div>
+
+    </div> 
+
+
+    <div class="container-fluid bg-warning m-0 p-0">
+      <div class="row m-0 p-0">
+          <div class="col-12 col-md-4 text-center m-0 p-0">
+              <a href="https://i.pinimg.com/564x/a6/77/09/a67709dedac96a2e25b510aa0484b14b.jpg" data-fancybox="gallery" data-caption="Caption #1">
+                 <img class="w-100 " src="https://i.pinimg.com/564x/a6/77/09/a67709dedac96a2e25b510aa0484b14b.jpg" alt="">
+              </a>
+              <a href="https://i.pinimg.com/736x/0a/e7/00/0ae70029766ba93e09094ae7d3ad4afa.jpg" data-fancybox="gallery" data-caption="Caption #1">
+                  <img class="w-100 " src="https://i.pinimg.com/736x/0a/e7/00/0ae70029766ba93e09094ae7d3ad4afa.jpg" alt="">  
+              </a>
+          </div>
+
+          <div class="col-12 col-md-4 text-center m-0 p-0">
+              <a href="https://i.pinimg.com/736x/0a/e7/00/0ae70029766ba93e09094ae7d3ad4afa.jpg" data-fancybox="gallery" data-caption="Caption #1">
+                  <img class="w-100 " src="https://i.pinimg.com/736x/0a/e7/00/0ae70029766ba93e09094ae7d3ad4afa.jpg" alt="">
+              </a>
+              <a href="https://i.pinimg.com/564x/a6/77/09/a67709dedac96a2e25b510aa0484b14b.jpg" data-fancybox="gallery" data-caption="Caption #1">
+                  <img class="w-100 " src="https://i.pinimg.com/564x/a6/77/09/a67709dedac96a2e25b510aa0484b14b.jpg" alt="">
+              </a>
+
+          </div>
+
+          <div class="col-12 col-md-4 text-center m-0 p-0">
+              <a href="https://i.pinimg.com/564x/a6/77/09/a67709dedac96a2e25b510aa0484b14b.jpg" data-fancybox="gallery" data-caption="Caption #1">
+                  <img class="w-100 " src="https://i.pinimg.com/564x/a6/77/09/a67709dedac96a2e25b510aa0484b14b.jpg" alt="">
+              </a>
+              <a href="https://i.pinimg.com/736x/0a/e7/00/0ae70029766ba93e09094ae7d3ad4afa.jpg" data-fancybox="gallery" data-caption="Caption #1">
+                  <img class="w-100 " src="https://i.pinimg.com/736x/0a/e7/00/0ae70029766ba93e09094ae7d3ad4afa.jpg" alt="">
+
+              </a>
+          </div>
+      </div>
+
+      <br>
+
+      <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1>"Gracias por cada momento juntos, tu tiempo es el mejor regalo. Te amo profundamente."</h1>
+            </div>
+        </div>
+
+    </div> 
+
+    <br>
+
+
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://i.pinimg.com/564x/d4/9c/06/d49c06c4a4225d4383d4be9fd54ae650.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://i.pinimg.com/736x/01/a1/17/01a1174a4af7a1d01d51b534daf13768.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://i.pinimg.com/564x/63/5d/a3/635da334abd5f7652af8aa2f106f93b8.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4">
+          <img class="w-100" src="https://i.pinimg.com/736x/07/9c/d8/079cd86df774ed656d48f62b738692bc.jpg" alt="">
+          <div class="text-left">
+            <p><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i></p>
+            <b>Pompotas</b>
+            <br>
+            <br>
+            <p>"Eres mi refugio en medio de la tormenta, mi compañero de vida y mi mejor amigo. Con cada gesto, cada palabra y cada mirada, mi amor por ti crece más y más."</p>
+            <p><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i></p>
+            <br>
+            <br>
+            <p><i class="bi bi-heart-fill icono-sm"></i></p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <img class="w-100" src="https://i.pinimg.com/736x/76/31/38/76313880d4d9feb942487cee00db5661.jpg" alt="">
+          <div class="text-left">
+            <p><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i></p>
+            <b>Mor</b>
+            <br>
+            <br>
+            <p>"En cada latido de mi corazón, late el amor que siento por ti. Eres mi luz, mi alegría y mi razón de ser. Te amo más de lo que las palabras pueden expresar."</p>
+            <p><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i></p>
+            <br>
+            <br>
+            <p><i class="bi bi-heart-fill icono-sm"></i></p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <img class="w-100" src="https://i.pinimg.com/736x/a1/bd/16/a1bd16c46122a3409d856ec2bf11e0ab.jpg" alt="">
+          <div class="text-left">
+            <p><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i></p>
+            <b>Chaparrita</b>
+            <br>
+            <br>
+            <p>"Contigo he aprendido que el amor verdadero es paciente, es bondadoso, y está siempre presente. Gracias por ser mi amor, mi apoyo y mi inspiración. Te amo más de lo que imaginas."
+            </p>
+            <p><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i><i class="bi bi-suit-heart-fill"></i></p>
+            <br>
+            <br>
+            <p><i class="bi bi-heart-fill icono-sm"></i></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+
+
+
+
+    
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+    <script>
+        Fancybox.bind("[data-fancybox]", {
+        // Your custom options
+        });
+ 
+    </script>
+
+    </div>    
+</body>
+</html>
