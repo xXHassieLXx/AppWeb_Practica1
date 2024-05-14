@@ -10,7 +10,7 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 py-5">
                 <h1 class="text-center">Calculadora</h1>
             </div>
         </div>
@@ -69,18 +69,27 @@
                     <button type="button" class="btn btn-primary form-control rounded-pill" onclick="asignar('.')">.</button>
                 </div>
                 <div class="col-3 text-center py-3">
-                    <button class="btn btn-primary form-control rounded-pill" onclick="asignar(0)">0</button>
+                    <button type="button" class="btn btn-primary form-control rounded-pill" onclick="asignar(0)">0</button>
                 </div>
                 <div class="col-3 text-center py-3">
-                    <button type="button" class="btn btn-secondary form-control rounded-pill" onclick="limpiar('')">C</button>
+                    <button type="button" class="btn btn-danger form-control rounded-pill" onclick="limpiar('')">C</button>
                 </div>
                 <div class="col-3 text-center py-3">
-                    <button type="button" class="btn btn-warning form-control rounded-pill" onclick="asignar('/')">/</button>
+                    <button type="button" class="btn btn-warning form-control rounded-pill" onclick="asignar('%')">%</button>
                 </div>
             </div>
             <div class="row">
-                <div class="col-12 col-md-6 text-center py-3 offset-md-6">
-                    <button type="button" class="btn btn-warning form-control rounded-pill" onclick="calcular('')">=</button>
+                <div class="col-3 text-center py-3">
+                    <button type="button" class="btn btn-warning form-control rounded-pill" onclick="asignar('(')">(</button>
+                </div>
+                <div class="col-3 text-center py-3">
+                    <button type="button" class="btn btn-warning form-control rounded-pill" onclick="asignar(')')">)</button>
+                </div>
+                <div class="col-3 text-center py-3">
+                    <button type="button" class="btn btn-warning form-control rounded-pill" onclick="asignar('^')">^</button>
+                </div>
+                <div class="col-3 text-center py-3">
+                    <button type="button" class="btn btn-secondary form-control rounded-pill" onclick="calcular('')">=</button>
                 </div>
             </div>
         </div>
