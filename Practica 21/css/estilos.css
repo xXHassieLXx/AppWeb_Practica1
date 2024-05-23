@@ -1,1 +1,53 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+/* estilos.css */
+
+/* Estilos generales */
+body {
+    background-color: white;
+    color: black;
+}
+
+/* Modo oscuro */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.dark-mode .modal-content {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+.dark-mode .btn-primary {
+    background-color: #6200ea;
+    border-color: #6200ea;
+}
+
+.dark-mode .btn-secondary {
+    background-color: #03dac6;
+    border-color: #03dac6;
+}
+
+.dark-mode .border {
+    border-color: #333333 !important;
+}
+
+.dark-mode .bi {
+    color: #ffffff;
+}
+
+/* Separación entre elementos */
+.row {
+    margin-bottom: 15px; /* Ajusta este valor según sea necesario */
+}
+
+
+/* estilos.css */
+
+/* Estilos para las imágenes */
+.imagen-tarea {
+    width: 100%; /* Ancho del 100% del contenedor */
+    max-width: 100px; /* Ancho máximo */
+    object-fit: cover; /* Recorte la imagen para que se ajuste */
+}

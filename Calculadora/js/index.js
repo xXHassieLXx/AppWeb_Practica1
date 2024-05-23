@@ -14,7 +14,6 @@ function calcular() {
         let expression = resultado.value
 
         // Añadir operadores de multiplicación implícitos
-        expression = expression.replace(/\%/g, '**');
         expression = expression.replace(/\^/g, '**'); // Reemplazar ^ con ** para la operación de potencia
         expression = expression.replace(/(\d)(\()/g, '$1*('); // Entre número y paréntesis de apertura
         expression = expression.replace(/(\))(\d)/g, ')*$2'); // Entre paréntesis de cierre y número
