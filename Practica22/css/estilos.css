@@ -1,6 +1,93 @@
-.imagenProducto{
+/* Estilos generales */
+body {
+    background-color: white;
+    color: rgb(255, 255, 255);
+}
+
+
+/* Estilos para imagen del producto */
+.imagenProducto {
     width: 250px;
     height: 250px;
     object-fit: cover;
-    
 }
+
+/* Modo oscuro */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode .navbar {
+    background-color: #343a40; /* bg-dark */
+    border-bottom: 1px solid #6c757d; /* border-body */
+}
+
+body.dark-mode .navbar-brand,
+body.dark-mode .navbar-nav .nav-link {
+    color: #ffffff;
+}
+
+body.dark-mode .btn-primary {
+    background-color: #6200ea;
+    border-color: #6200ea;
+}
+
+body.dark-mode .btn-secondary {
+    background-color: #03dac6;
+    border-color: #03dac6;
+}
+
+body.dark-mode .card {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+body.dark-mode .card-body {
+    border-color: #333333 !important;
+}
+
+body.dark-mode .bi {
+    color: #ffffff;
+}
+
+body.dark-mode .form-control {
+    background-color: #333333;
+    color: #ffffff;
+    border-color: #444444;
+}
+
+body.dark-mode .form-control::placeholder {
+    color: #aaaaaa;
+}
+
+body.dark-mode .btn-outline-success {
+    color: #03dac6;
+    border-color: #03dac6;
+}
+
+body.dark-mode .btn-outline-success:hover {
+    background-color: #03dac6;
+    color: #121212;
+}
+
+/* Estilos para el switch */
+.form-check-input {
+    width: 3rem;
+    height: 1.5rem;
+    margin-left: -2.5em;
+}
+
+.form-check-input:checked {
+    background-color: #03dac6;
+    border-color: #03dac6;
+}
+
+.form-check-input:focus {
+    box-shadow: none;
+}
+
+.form-check-label i {
+    vertical-align: middle;
+}
+
