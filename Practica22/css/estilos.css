@@ -4,7 +4,6 @@ body {
     color: rgb(255, 255, 255);
 }
 
-
 /* Estilos para imagen del producto */
 .imagenProducto {
     width: 250px;
@@ -91,3 +90,12 @@ body.dark-mode .btn-outline-success:hover {
     vertical-align: middle;
 }
 
+.cart-button a {
+    font-size: 0.8rem; /* Ajusta este valor según tus necesidades */
+}
+
+/* CSS para productos filtrados */
+.filtered-product .card-title,
+.filtered-product .card-text {
+    color: black;
+}
