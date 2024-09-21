@@ -14,19 +14,9 @@
     align-items: center;
     height: 100vh;
     background-color: #f7f7f7;
-    overflow: hidden; /* Evita el desbordamiento del contenido */
 }
 .container {
     text-align: center;
-    position: relative; /* Necesario para el z-index */
-    z-index: 10; /* Asegura que el texto esté por encima */
-}
-.custom-container {
-    max-width: 80%; /* Ocupa el 80% del ancho */
-    margin: auto; /* Centra el contenedor */
-    text-align: center; /* Centrar el texto dentro del contenedor */
-    position: relative; /* Para usar z-index */
-    z-index: 10; /* Asegura que el texto esté por encima */
 }
 h1 {
     font-size: 36px;
@@ -37,18 +27,12 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    position: absolute; /* Permite que las flores se superpongan */
-    width: 100%; /* Asegura que ocupe todo el ancho */
-    height: 100%; /* Asegura que ocupe todo el alto */
-    top: 0;
-    left: 0;
-    z-index: 1; /* Flores detrás del texto */
 }
 .flower {
     width: 200px;
     height: 200px;
     margin: 10px;
-    position: absolute; /* Para posicionar flores libremente */
+    position: relative;
 }
 .petal {
     width: 60px;
@@ -88,8 +72,10 @@ h1 {
     }
 }
 .petal {
+    /* Agrega una animación de entrada a los pétalos */
     animation: fadeInPetal 0.5s ease-in-out both;
-}
+} 
+
 </style>
 <body>
     <div class="container">
@@ -102,8 +88,8 @@ h1 {
     <script src="script.js"></script>
 </body>
 
-<script>
-function createFlower() {
+
+<script>function createFlower() {
     const flowerContainer = document.querySelector(".flower-container");
     // Número máximo de flores en pantalla
     const maxFlowersOnScreen = 20;
@@ -161,7 +147,6 @@ function createFlower() {
     }
 }
 // Cambia el intervalo de tiempo para controlar la aparición de las flores cada 3 segundos
-setInterval(createFlower, 1000); // Nuevas flores cada 3 segundos
-</script>
+setInterval(createFlower, 1000); // Nuevas flores cada 3 segundos</script>
 
 </html>
