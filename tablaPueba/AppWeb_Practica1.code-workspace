@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"name": "AppWeb_Practica1",
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5501,
+		"liveServer.settings.multiRootWorkspaceName": "pagprueba"
+	}
+}
